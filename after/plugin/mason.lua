@@ -14,11 +14,4 @@ mason.setup({
     }
 })
 
-mason_lspconfig.setup {
-    ensure_installed = {
-        'sumneko_lua',
-        'tsserver',
-        'omnisharp'
-    },
-    automatic_installation = true
-}
+mason_lspconfig.setup {}
