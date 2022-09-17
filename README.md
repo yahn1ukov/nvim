@@ -1,7 +1,10 @@
 # My configuration of Neovim (.NET/Angular or React)
 
-## Laptop
-Apple Macbook Pro 13 2017 (i5, 8gb, 256gb)
+## My setup
+
+**Laptop:** Apple Macbook Pro 13 2017 (i5, 8gb, 256gb)
+
+**OS:** Monterey (v. 12.6)
 
 ## List of plugins (Total: `27`):
 
