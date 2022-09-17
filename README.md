@@ -1,4 +1,7 @@
-# My configuration of Neovim
+# My configuration of Neovim (.NET/Angular or React)
+
+## Laptop
+Apple Macbook Pro 13 2017 (i5, 8gb, 256gb)
 
 ## List of plugins (Total: `27`):
 
@@ -29,6 +32,12 @@
 - [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [preservim/tagbar](https://github.com/preservim/tagbar)
 - [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)
+
+**Note 1:** To use [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) you need to install [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
+
+**Note 2:** To use [preservim/tagbar](https://github.com/preservim/tagbar) you need to install ctags
+* Macos: `brew install ctags`  
+* Windows: `scoop install ctags`
 
 ## Languages and technologies
 
