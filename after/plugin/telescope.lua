@@ -1,0 +1,18 @@
+local status, telescope = pcall(require, 'telescope')
+if (not status) then return end
+
+telescope.setup {
+    defaults = {
+        file_ignore_patterns = {
+            'node_modules', '.git', 'dist', 'obj', 'bin'
+        }
+    },
+    extensions = {
+        file_browser = {
+            theme = 'dropdown',
+            hijack_netrw = true
+        }
+    }
+}
+
+telescope.load_extension('file_browser')
