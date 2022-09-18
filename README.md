@@ -6,6 +6,8 @@
 
 **OS:** Monterey (v. 12.6)
 
+**Terminal:** [iTerm2](https://iterm2.com/) + [fish shell](https://fishshell.com/)
+
 ## List of plugins (Total: `27`):
 
 - [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim)
@@ -38,9 +40,7 @@
 
 **Note 1:** To use [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) you need to install [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 
-**Note 2:** To use [preservim/tagbar](https://github.com/preservim/tagbar) you need to install ctags
-* Macos: `brew install ctags`  
-* Windows: `scoop install ctags`
+**Note 2:** To use [preservim/tagbar](https://github.com/preservim/tagbar) you need to install ctags `brew install ctags`  
 
 ## Languages and technologies
 
