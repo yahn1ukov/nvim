@@ -1,4 +1,4 @@
-# My configuration of Neovim (.NET/Angular or React)
+# My Neovim configuration (.NET/Angular or React)
 
 ## My setup
 
