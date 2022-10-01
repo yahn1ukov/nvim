@@ -13,6 +13,7 @@ local on_attach = function(client, bufnr)
 end
 
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 lspconfig.sumneko_lua.setup {
     on_attach = on_attach,
@@ -30,57 +31,41 @@ lspconfig.sumneko_lua.setup {
 
 lspconfig.tsserver.setup {
     on_attach = on_attach,
-    cmd = { 'typescript-language-server', '--stdio' },
-    filetypes = { 'javascript', 'javascriptreact', 'javascript.jsx', 'typescript', 'typescriptreact', 'typescript.tsx' },
     capabilities = capabilities
 }
 
 lspconfig.csharp_ls.setup {
     on_attach = on_attach,
-    cmd = { 'csharp-ls' },
-    filetypes = { 'cs' },
     capabilities = capabilities
 }
 
 lspconfig.html.setup {
     on_attach = on_attach,
-    cmd = { 'vscode-html-language-server', '--stdio' },
-    filetypes = { 'html' },
     capabilities = capabilities
 }
 
 lspconfig.cssls.setup {
     on_attach = on_attach,
-    cmd = { 'vscode-css-language-server', '--stdio' },
-    filetypes = { 'css', 'scss', 'less' },
     capabilities = capabilities
 }
 
 lspconfig.dockerls.setup {
     on_attach = on_attach,
-    cmd = { 'docker-langserver', '--stdio' },
-    filetypes = { 'dockerfile' },
     capabilities = capabilities
 }
 
 lspconfig.sqlls.setup {
     on_attach = on_attach,
-    cmd = { 'sql-language-server', 'up', '--method', 'stdio' },
-    filetypes = { 'sql', 'mysql' },
     capabilities = capabilities
 }
 
 lspconfig.jsonls.setup {
     on_attach = on_attach,
-    cmd = { 'vscode-json-language-server', '--stdio' },
-    filetypes = { 'json' },
     capabilities = capabilities
 }
 
-lspconfig.lemminx.setup {
+lspconfig.tailwindcss.setup {
     on_attach = on_attach,
-    cmd = { 'lemminx' },
-    filetypes = { 'xml', 'xsd', 'xsl', 'xslt', 'svg' },
     capabilities = capabilities
 }
 
