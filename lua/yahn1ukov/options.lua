@@ -2,6 +2,7 @@ local opt = vim.opt
 
 opt.encoding = 'utf-8'
 opt.fileencoding = 'utf-8'
+opt.spell = true
 
 opt.number = true
 opt.relativenumber = true

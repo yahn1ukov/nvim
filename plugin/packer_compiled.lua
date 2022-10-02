@@ -84,10 +84,10 @@ _G.packer_plugins = {
     path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\auto-pairs",
     url = "https://github.com/jiangmiao/auto-pairs"
   },
-  ["bufferline.nvim"] = {
+  ["barbar.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bufferline.nvim",
-    url = "https://github.com/akinsho/bufferline.nvim"
+    path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\barbar.nvim",
+    url = "https://github.com/romgrk/barbar.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -99,11 +99,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["dracula.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dracula.nvim",
-    url = "https://github.com/Mofiqul/dracula.nvim"
-  },
   ["git.nvim"] = {
     loaded = true,
     path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\git.nvim",
@@ -113,6 +108,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["lsp-colors.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-colors.nvim",
+    url = "https://github.com/folke/lsp-colors.nvim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
@@ -189,6 +189,16 @@ _G.packer_plugins = {
     path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["rest.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rest.nvim",
+    url = "https://github.com/NTBBloodbath/rest.nvim"
+  },
+  ["spellsitter.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\spellsitter.nvim",
+    url = "https://github.com/lewis6991/spellsitter.nvim"
+  },
   tagbar = {
     loaded = true,
     path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tagbar",
@@ -203,6 +213,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-auto-save"] = {
     loaded = true,

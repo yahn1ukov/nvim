@@ -23,7 +23,8 @@ lspconfig.sumneko_lua.setup {
                 globals = { 'vim' }
             },
             workspace = {
-                library = vim.api.nvim_get_runtime_file('', true)
+                library = vim.api.nvim_get_runtime_file('', true),
+                checkThirdParty = false
             }
         }
     }
@@ -68,6 +69,15 @@ lspconfig.tailwindcss.setup {
     on_attach = on_attach,
     capabilities = capabilities
 }
+
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+    vim.lsp.diagnostic.on_publish_diagnostics, {
+    underline = true,
+    update_in_insert = false,
+    virtual_text = { spacing = 4, prefix = "●" },
+    severity_sort = true,
+}
+)
 
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
 

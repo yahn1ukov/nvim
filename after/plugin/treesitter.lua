@@ -11,13 +11,10 @@ treesitter.setup {
         'css',
         'scss',
         'dockerfile',
-        'sql',
-        'json'
+        'json',
+        'http'
     },
     highlight = {
-        enable = true
-    },
-    autotag = {
         enable = true
     },
     auto_pairs = {

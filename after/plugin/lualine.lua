@@ -3,7 +3,8 @@ if (not status) then return end
 
 lualine.setup {
     options = {
-        theme = 'dracula-nvim'
+        -- theme = 'dracula-nvim'
+        theme = 'tokyonight'
     },
     sections = {
         lualine_c = { 'filename', 'filesize' }

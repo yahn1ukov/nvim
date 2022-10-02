@@ -14,11 +14,17 @@ map('n', '<S-n>', ':NvimTreeToggle<CR>')
 
 map('n', '<S-f>', '<CMD>Telescope find_files<CR>')
 
-map('n', '<Tab>', ':BufferLineCycleNext<CR>')
-map('n', '<S-Tab>', ':BufferLineCyclePrev<CR>')
+map('n', '<Tab>', '<CMD>BufferNext<CR>')
+map('n', '<S-Tab>', '<CMD>BufferPrevious<CR>')
+map('n', '<S-q>', '<CMD>BufferClose<CR>');
 
-map('n', '<S-t>', ':TagbarToggle<CR>')
+map('n', '<C-t>', ':TagbarToggle<CR>')
 
-map('i', '<S-d>', '<CMD>Lspsaga diagnostic_jump_next<CR>')
-map('i', '<S-h>', '<CMD>Lspsaga hover_doc<CR>')
-map('i', '<S-f>', '<CMD>Lspsaga lsp_finder<CR>')
+map('n', '<C-d>', '<CMD>Lspsaga diagnostic_jump_next<CR>')
+map('n', '<C-h>', '<CMD>Lspsaga hover_doc<CR>')
+map('n', '<C-f>', '<CMD>Lspsaga lsp_finder<CR>')
+map('n', '<C-k>', '<CMD>Lspsaga signature_help<CR>')
+
+map('n', '<S-t>', ':ToggleTerm<CR>')
+
+map('n', '<S-r>', '<Plug>RestNvim')
