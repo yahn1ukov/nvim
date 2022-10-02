@@ -1,14 +1,17 @@
-# My Neovim configuration (.NET/Angular or React)
+# My Neovim configuration (.NET/React)
 
-## My setup
+## Languages and technologies
 
-**Laptop:** Apple Macbook Pro 13 2017 (i5, 8gb, 256gb)
+- `C#`
+- `JavaScript / Typescript`
+- `HTML`
+- `CSS / SCSS / Tailwind CSS`
+- `Docker`
+- `SQL`
+- `JSON`
+- `Lua`
 
-**OS:** Monterey (v. 12.6)
-
-**Terminal:** [iTerm2](https://iterm2.com/) + [fish shell](https://fishshell.com/)
-
-## List of plugins (Total: `27`):
+## Plugins (Total: `27`):
 
 - [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim)
 - [Mofiqul/dracula.nvim](https://github.com/Mofiqul/dracula.nvim)
@@ -38,20 +41,29 @@
 - [preservim/tagbar](https://github.com/preservim/tagbar)
 - [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)
 
-**Note 1:** To use [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) you need to install [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
+## :exclamation: :exclamation: :exclamation: Be sure to install :exclamation: :exclamation: :exclamation:
 
-**Note 2:** To use [preservim/tagbar](https://github.com/preservim/tagbar) you need to install ctags `brew install ctags`  
-
-## Languages and technologies
-
-|Name|Server|LSP|Filetype|
-|-|-|-|-|
-|`C#`|`csharp-language-server`|`csharp_ls`|`.cs`|
-|`JavaScript`<br/>`Typescript`|`typescript-lagnuage-server`|`tsserver`|`.js` `.ts` `.jsx` `.tsx`|
-|`HTML`|`vscode-html-language-server`|`html`|`.html`|
-|`CSS`<br/>`SCSS`<br>`LESS`|`vscode-css-language-server`|`cssls`|`.css` `.scss` `.less`|
-|`Docker`|`dockerfile-language-server`|`dockerls`|`.dockerfile`|
-|`SQL`|`sql-language-server`|`sqlls`|`.sql` `.mysql`|
-|`JSON`|`vscode-json-language-server`|`jsonls`|`.json`|
-|`XML`|`lemminx`|`lemminx`|`.xml` `.xsd` `.xsl` `.xslt` `.svg`|
-|`Lua`|`lua-language-server`|`sumneko_lua`|`.lua`|
+- Packer:
+  - Macos, Linux: `git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+~/.local/share/nvim/site/pack/packer/start/packer.nvim`
+  - Windows: `git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"`
+- Nerd Font (Hack Nerd Font Mono):
+  - Macos: `brew tap homebrew/cask-fonts` | `brew install --cask font-hack-nerd-font`
+  - Windows, Linux: [Download .zip](https://www.nerdfonts.com/font-downloads)
+- Ctags: 
+  - Macos: `brew install ctags`
+  - Windows: `scoop install ctags`
+  - Linux (Ubuntu): `sudo apt install ctags` or `sudo apt install universal-ctags`
+- Gcc: 
+  - Macos: `brew install gcc`
+  - Windows: `scoop install gcc`
+  - Linux (Ubuntu): `sudo apt install gcc`
+- Npm packages: 
+  - `npm i -g typescript-language-server` 
+  - `npm i -g vscode-langservers-extracted` 
+  - `npm i -g sql-language-server` 
+  - `npm i -g @tailwindcss/language-server`
+- Dotnet packages:
+  - `dotnet tool install --global csharp-ls`
+- Homebrew packages:
+  - `brew install lua-language-server`
