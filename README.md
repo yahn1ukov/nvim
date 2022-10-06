@@ -41,7 +41,7 @@
 - [preservim/tagbar](https://github.com/preservim/tagbar)
 - [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)
 
-## :exclamation: :exclamation: :exclamation: Be sure to install :exclamation: :exclamation: :exclamation:
+## :exclamation: Requirements :exclamation:
 
 - Packer:
   - Macos, Linux: `git clone --depth 1 https://github.com/wbthomason/packer.nvim\
