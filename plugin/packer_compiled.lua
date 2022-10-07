@@ -189,21 +189,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["rest.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rest.nvim",
-    url = "https://github.com/NTBBloodbath/rest.nvim"
-  },
-  ["spellsitter.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\spellsitter.nvim",
-    url = "https://github.com/lewis6991/spellsitter.nvim"
-  },
-  tagbar = {
-    loaded = true,
-    path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tagbar",
-    url = "https://github.com/preservim/tagbar"
-  },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
     path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope-file-browser.nvim",
