@@ -66,10 +66,38 @@
 - [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
 
 
-## Keymapping
+## Keymaps
 
-|Keymap|Action|
-|-|-|
+|Mode|Keymap|Action|
+|-|-|-|
+|`normal`|`Shift + h`|`navigate to left`|
+|`normal`|`Shift + j`|`navigate to down`|
+|`normal`|`Shift + k`|`navigate to up`|
+|`normal`|`Shift + l`|`navigate to right`|
+|`normal`|`Shift + s`|`split vertical`|
+|`normal`|`Shift + v`|`split horizontal`|
+|`normal`|`Shift + n`|`toggle sidebar`|
+|`normal`|`Shift + f`|`find files`|
+|`normal`|`Tab`|`next tab`|
+|`normal`|`Shift + Tab`|`previous tab`|
+|`normal`|`Shift + q`|`close tab`|
+|`normal`|`Shift + t`|`toggle terminal`|
+|`normal`|`Ctrl + d`|`diagnostic jump next`|
+|`normal`|`Ctrl + h`|`hover doc`|
+|`normal`|`Ctrl + f`|`find variable`|
+|`insert`|`Tab`|`next suggestion`|
+|`insert`|`Shift + Tab`|`previous suggestion`|
+|`insert`|`Esc`|`close suggestions`|
+|`insert`|`Enter`|`accept suggestion`|
 
 ## Screenshots
 
+![cmp-lsp](./screenshots/cmp-lsp.jpg)
+
+![lsp-doc](./screenshots/lsp-doc.jpg)
+
+![lsp-find](./screenshots/lsp-find.jpg)
+
+![lsp-hint](./screenshots/lsp-hint.jpg)
+
+![telescope](./screenshots/telescope.jpg)
