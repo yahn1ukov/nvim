@@ -1,5 +1,13 @@
 # My Neovim configuration (.NET/React)
 
+## Content
+
+- [Languages and technologies](#languages-and-technologies)
+- [Requirements](#requirements)
+- [Plugins](#plugins)
+- [Keymaps](#keymaps)
+- [Screenshots](#screenshots)
+
 ## Languages and technologies
 
 - `C#`
@@ -11,7 +19,7 @@
 - `JSON`
 - `Lua`
 
-## :exclamation: Requirements :exclamation:
+## Requirements
 
 - Packer:
   - Macos, Linux: `git clone --depth 1 https://github.com/wbthomason/packer.nvim\
