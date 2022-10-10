@@ -22,11 +22,21 @@
 ## Requirements
 
 - Packer:
-  - Macos, Linux: `git clone --depth 1 https://github.com/wbthomason/packer.nvim\
-~/.local/share/nvim/site/pack/packer/start/packer.nvim`
-  - Windows: `git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"`
+  - Macos, Linux:
+    ```sh
+    git clone --depth 1 https://github.com/wbthomason/packer.nvim\ 
+    ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+    ```
+  - Windows: 
+    ```sh 
+    git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
+    ```
 - Nerd Font (Hack Nerd Font Mono):
-  - Macos: `brew tap homebrew/cask-fonts` | `brew install --cask font-hack-nerd-font`
+  - Macos: 
+    ```sh
+    brew tap homebrew/cask-fonts
+    brew install --cask font-hack-nerd-font
+    ```
   - Windows, Linux: [Download .zip](https://www.nerdfonts.com/font-downloads)
 - Gcc: 
   - Macos: `brew install gcc`
