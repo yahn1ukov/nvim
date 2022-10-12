@@ -21,5 +21,7 @@ map('n', '<S-q>', '<CMD>BufferClose<CR>');
 map('n', '<C-d>', '<CMD>Lspsaga diagnostic_jump_next<CR>')
 map('n', '<C-h>', '<CMD>Lspsaga hover_doc<CR>')
 map('n', '<C-f>', '<CMD>Lspsaga lsp_finder<CR>')
+map('n', '<C-r>', '<CMD>Lspsaga rename<CR>')
+map('n', '<C-p>', '<CMD>Lspsaga peek_definition<CR>')
 
 map('n', '<S-t>', ':ToggleTerm<CR>')
