@@ -102,7 +102,9 @@
 |`normal`|`Shift + t`|`toggle terminal`|
 |`normal`|`Ctrl + d`|`diagnostic jump next`|
 |`normal`|`Ctrl + h`|`hover doc`|
-|`normal`|`Ctrl + f`|`find variable`|
+|`normal`|`Ctrl + f`|`find variable reference`|
+|`normal`|`Ctrl + p`|`find variable definition`|
+|`normal`|`Ctrl + r`|`rename variable`|
 |`insert`|`Tab`|`next suggestion`|
 |`insert`|`Shift + Tab`|`previous suggestion`|
 |`insert`|`Esc`|`close suggestions`|
