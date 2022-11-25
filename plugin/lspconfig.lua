@@ -3,13 +3,24 @@ if (not status) then return end
 
 local protocol = require('vim.lsp.protocol')
 
+local augroup_format = vim.api.nvim_create_augroup("Format", { clear = true })
+local enable_format_on_save = function(_, bufnr)
+    vim.api.nvim_clear_autocmds({ group = augroup_format, buffer = bufnr })
+    vim.api.nvim_create_autocmd("BufWritePre", {
+        group = augroup_format,
+        buffer = bufnr,
+        callback = function()
+            vim.lsp.buf.format({ bufnr = bufnr })
+        end,
+    })
+end
+
 local on_attach = function(client, bufnr)
-    if client.server_capabilities.documentFormattingProvider then
-        vim.api.nvim_command [[ augroup Format ]]
-        vim.api.nvim_command [[ autocmd! * <buffer> ]]
-        vim.api.nvim_command [[ autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync() ]]
-        vim.api.nvim_command [[ augroup END ]]
-    end
+    local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
+
+    local opts = { noremap = true, silent = true }
+    buf_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
+    buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
 end
 
 protocol.CompletionItemKind = {
@@ -40,22 +51,26 @@ protocol.CompletionItemKind = {
     ''
 }
 
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-capabilities.textDocument.completion.completionItem.snippetSupport = true
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 lspconfig.sumneko_lua.setup {
-    on_attach = on_attach,
+    capabilities = capabilities,
+    on_attach = function(client, bufnr)
+        on_attach(client, bufnr)
+        enable_format_on_save(client, bufnr)
+    end,
     settings = {
         Lua = {
             diagnostics = {
-                globals = { 'vim' }
+                globals = { 'vim' },
             },
+
             workspace = {
-                library = vim.api.nvim_get_runtime_file('', true),
+                library = vim.api.nvim_get_runtime_file("", true),
                 checkThirdParty = false
-            }
-        }
-    }
+            },
+        },
+    },
 }
 
 lspconfig.tsserver.setup {
@@ -74,16 +89,6 @@ lspconfig.html.setup {
 }
 
 lspconfig.cssls.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-lspconfig.dockerls.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-lspconfig.sqlls.setup {
     on_attach = on_attach,
     capabilities = capabilities
 }

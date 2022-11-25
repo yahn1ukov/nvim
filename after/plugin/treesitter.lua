@@ -10,9 +10,7 @@ treesitter.setup {
         'html',
         'css',
         'scss',
-        'dockerfile',
-        'json',
-        'http'
+        'json'
     },
     highlight = {
         enable = true

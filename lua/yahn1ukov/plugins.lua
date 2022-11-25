@@ -13,7 +13,7 @@ packer.startup(function(use)
 
     use 'kyazdani42/nvim-web-devicons'
 
-    use 'folke/tokyonight.nvim'
+    use 'Mofiqul/dracula.nvim'
 
     use 'nvim-lualine/lualine.nvim'
 
@@ -47,7 +47,6 @@ packer.startup(function(use)
     use 'jiangmiao/auto-pairs'
     use 'windwp/nvim-ts-autotag'
     use 'norcalli/nvim-colorizer.lua'
-    use 'akinsho/toggleterm.nvim'
     use 'terrortylor/nvim-comment'
 
     use 'dinhhuy258/git.nvim'
