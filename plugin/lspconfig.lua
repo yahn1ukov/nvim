@@ -73,36 +73,6 @@ lspconfig.sumneko_lua.setup {
     },
 }
 
-lspconfig.tsserver.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-lspconfig.csharp_ls.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-lspconfig.html.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-lspconfig.cssls.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-lspconfig.jsonls.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-lspconfig.tailwindcss.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     vim.lsp.diagnostic.on_publish_diagnostics, {
     underline = true,

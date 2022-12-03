@@ -3,14 +3,7 @@ if (not status) then return end
 
 treesitter.setup {
     ensure_installed = {
-        'lua',
-        'c_sharp',
-        'javascript',
-        'typescript',
-        'html',
-        'css',
-        'scss',
-        'json'
+        'lua'
     },
     highlight = {
         enable = true

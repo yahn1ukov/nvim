@@ -45,7 +45,6 @@ packer.startup(function(use)
 
     use '907th/vim-auto-save'
     use 'jiangmiao/auto-pairs'
-    use 'windwp/nvim-ts-autotag'
     use 'norcalli/nvim-colorizer.lua'
     use 'terrortylor/nvim-comment'
 
