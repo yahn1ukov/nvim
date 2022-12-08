@@ -1,4 +1,4 @@
-# My Neovim configuration (.NET/React)
+# My Neovim configuration
 
 ## Content
 
