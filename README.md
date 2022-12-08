@@ -2,17 +2,19 @@
 
 ## Content
 
-- [Languages and technologies](#languages-and-technologies)
+- [Languages](#languages)
 - [Plugins](#plugins)
 - [Keymaps](#keymaps)
 - [Screenshots](#screenshots)
 
-## Languages and technologies
+## Languages
 
-- `C`
-- `C++`
-- `Python`
-- `Lua`
+|Name|LSP|
+|-|-|
+|`C`|`clangd`|
+|`C++`|`clangd`|
+|`Python`|`pyright`|
+|`Lua`|`lua-language-server`|
 
 ## Plugins:
 
