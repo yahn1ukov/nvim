@@ -3,7 +3,11 @@ if (not status) then return end
 
 treesitter.setup {
     ensure_installed = {
-        'lua'
+        'lua',
+        'c',
+        'cpp',
+        'cmake',
+        'python'
     },
     highlight = {
         enable = true

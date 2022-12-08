@@ -73,6 +73,15 @@ lspconfig.sumneko_lua.setup {
     },
 }
 
+lspconfig.cmake.setup {}
+
+lspconfig.pyright.setup {}
+
+lspconfig.clangd.setup {
+    filetypes = { "c", "cpp" },
+    capabilities = capabilities
+}
+
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     vim.lsp.diagnostic.on_publish_diagnostics, {
     underline = true,
