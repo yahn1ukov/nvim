@@ -104,16 +104,6 @@ _G.packer_plugins = {
     path = "/home/yahn1ukov/.local/share/nvim/site/pack/packer/start/dracula.nvim",
     url = "https://github.com/Mofiqul/dracula.nvim"
   },
-  ["git.nvim"] = {
-    loaded = true,
-    path = "/home/yahn1ukov/.local/share/nvim/site/pack/packer/start/git.nvim",
-    url = "https://github.com/dinhhuy258/git.nvim"
-  },
-  ["gitsigns.nvim"] = {
-    loaded = true,
-    path = "/home/yahn1ukov/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
-    url = "https://github.com/lewis6991/gitsigns.nvim"
-  },
   ["lsp-colors.nvim"] = {
     loaded = true,
     path = "/home/yahn1ukov/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim",
@@ -148,11 +138,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/yahn1ukov/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
-  },
-  ["nvim-colorizer.lua"] = {
-    loaded = true,
-    path = "/home/yahn1ukov/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
-    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-comment"] = {
     loaded = true,

@@ -1,4 +1,4 @@
-# My Neovim configuration
+# My Neovim Configuration
 
 ## Content
 
@@ -39,12 +39,8 @@
 - [romgrk/barbar.nvim](https://github.com/romgrk/barbar.nvim)
 - [907th/vim-auto-save](https://github.com/907th/vim-auto-save)
 - [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs)
-- [norcalli/nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua)
 - [terrortylor/nvim-comment](https://github.com/terrortylor/nvim-comment)
-- [dinhhuy258/git.nvim](https://github.com/dinhhuy258/git.nvim)
-- [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-
 
 ## Keymaps
 

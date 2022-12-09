@@ -12,7 +12,6 @@ packer.startup(function(use)
     use 'kyazdani42/nvim-web-devicons'
     use 'Mofiqul/dracula.nvim'
     use 'nvim-lualine/lualine.nvim'
-
     use 'neovim/nvim-lspconfig'
     use 'onsails/lspkind-nvim'
     use 'hrsh7th/cmp-buffer'
@@ -33,8 +32,5 @@ packer.startup(function(use)
     use 'romgrk/barbar.nvim'
     use '907th/vim-auto-save'
     use 'jiangmiao/auto-pairs'
-    use 'norcalli/nvim-colorizer.lua'
     use 'terrortylor/nvim-comment'
-    use 'dinhhuy258/git.nvim'
-    use 'lewis6991/gitsigns.nvim'
 end)
