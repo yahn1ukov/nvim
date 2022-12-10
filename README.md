@@ -11,10 +11,10 @@
 
 |Name|LSP|
 |-|-|
-|`C`|`clangd`|
-|`C++`|`clangd`|
-|`Python`|`pyright`|
-|`Lua`|`lua-language-server`|
+|C|clangd|
+|C++|clangd|
+|Python|pyright|
+|Lua|lua-language-server|
 
 ## Plugins:
 
@@ -46,26 +46,26 @@
 
 |Mode|Keymap|Action|
 |-|-|-|
-|`normal`|`Shift + h`|`navigate to left`|
-|`normal`|`Shift + j`|`navigate to down`|
-|`normal`|`Shift + k`|`navigate to up`|
-|`normal`|`Shift + l`|`navigate to right`|
-|`normal`|`Shift + s`|`split vertical`|
-|`normal`|`Shift + v`|`split horizontal`|
-|`normal`|`Shift + n`|`toggle sidebar`|
-|`normal`|`Shift + f`|`find files`|
-|`normal`|`Tab`|`next tab`|
-|`normal`|`Shift + Tab`|`previous tab`|
-|`normal`|`Shift + q`|`close tab`|
-|`normal`|`Ctrl + d`|`diagnostic jump next`|
-|`normal`|`Ctrl + h`|`hover doc`|
-|`normal`|`Ctrl + f`|`find variable reference`|
-|`normal`|`Ctrl + p`|`find variable definition`|
-|`normal`|`Ctrl + r`|`rename variable`|
-|`insert`|`Tab`|`next suggestion`|
-|`insert`|`Shift + Tab`|`previous suggestion`|
-|`insert`|`Esc`|`close suggestions`|
-|`insert`|`Enter`|`accept suggestion`|
+|normal|Shift + h|navigate to left|
+|normal|Shift + j|navigate to down|
+|normal|Shift + k|navigate to up|
+|normal|Shift + l|navigate to right|
+|normal|Shift + s|split vertical|
+|normal|Shift + v|split horizontal|
+|normal|Shift + n|toggle sidebar|
+|normal|Shift + f|find files|
+|normal|Tab|next tab|
+|normal|Shift + Tab|previous tab|
+|normal|Shift + q|close tab|
+|normal|Ctrl + d|diagnostic jump next|
+|normal|Ctrl + h|hover doc|
+|normal|Ctrl + f|find variable reference|
+|normal|Ctrl + p|find variable definition|
+|normal|Ctrl + r|rename variable|
+|insert|Tab|next suggestion|
+|insert|Shift + Tab|previous suggestion|
+|insert|Esc|close suggestions|
+|insert|Enter|accept suggestion|
 
 ## Screenshots
 
