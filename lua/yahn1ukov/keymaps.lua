@@ -1,25 +1,15 @@
-local function map(m, k, v)
-    vim.keymap.set(m, k, v, { noremap = true, silent = true })
-end
+vim.keymap.set("n", "<S-h>", "<C-w>h", { noremap = true, silent = true })
+vim.keymap.set("n", "<S-j>", "<C-w>j", { noremap = true, silent = true })
+vim.keymap.set("n", "<S-k>", "<C-w>k", { noremap = true, silent = true })
+vim.keymap.set("n", "<S-l>", "<C-w>l", { noremap = true, silent = true })
 
-map('n', '<S-h>', '<C-w>h')
-map('n', '<S-j>', '<C-w>j')
-map('n', '<S-k>', '<C-w>k')
-map('n', '<S-l>', '<C-w>l')
+vim.keymap.set("n", "<S-s>", "<C-w>s", { noremap = true, silent = true })
+vim.keymap.set("n", "<S-v>", "<C-w>v", { noremap = true, silent = true })
 
-map('n', '<S-s>', '<C-w>s')
-map('n', '<S-v>', '<C-w>v')
+vim.keymap.set("n", "<Tab>", "<CMD>BufferNext<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<S-Tab>", "<CMD>BufferPrevious<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<S-q>", "<CMD>BufferClose<CR>", { noremap = true, silent = true })
 
-map('n', '<S-n>', ':NvimTreeToggle<CR>')
+vim.keymap.set("n", "<S-n>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
 
-map('n', '<S-f>', '<CMD>Telescope find_files<CR>')
-
-map('n', '<Tab>', '<CMD>BufferNext<CR>')
-map('n', '<S-Tab>', '<CMD>BufferPrevious<CR>')
-map('n', '<S-q>', '<CMD>BufferClose<CR>');
-
-map('n', '<C-d>', '<CMD>Lspsaga diagnostic_jump_next<CR>')
-map('n', '<C-h>', '<CMD>Lspsaga hover_doc<CR>')
-map('n', '<C-f>', '<CMD>Lspsaga lsp_finder<CR>')
-map('n', '<C-r>', '<CMD>Lspsaga rename<CR>')
-map('n', '<C-p>', '<CMD>Lspsaga peek_definition<CR>')
+vim.keymap.set("n", "<S-f>", "<CMD>Telescope find_files<CR>", { noremap = true, silent = true })

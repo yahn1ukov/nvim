@@ -1,46 +1,27 @@
-local opt = vim.opt
+vim.opt.cursorline = true
 
-opt.encoding = 'utf-8'
-opt.fileencoding = 'utf-8'
-opt.spell = true
+vim.opt.nu = true
+vim.opt.relativenumber = true
 
-opt.number = true
-opt.relativenumber = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+vim.opt.expandtab = true
 
-opt.cursorline = true
-opt.background = 'dark'
-opt.laststatus = 2
-opt.title = true
-opt.mouse = 'a'
-opt.termguicolors = true
+vim.opt.smartindent = true
 
-opt.hlsearch = true
-opt.incsearch = true
-opt.smartcase = true
-opt.ignorecase = true
+vim.opt.wrap = false
 
-opt.backup = false
-opt.swapfile = false
+vim.opt.backup = false
+vim.opt.swapfile = false
 
-opt.backspace = { 'start', 'eol', 'indent' }
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
 
-opt.tabstop = 4
-opt.shiftwidth = 4
-opt.autoindent = true
-opt.expandtab = true
-opt.smarttab = true
-opt.breakindent = true
+vim.opt.termguicolors = true
 
-opt.wrap = true
-opt.linebreak = true
+vim.opt.scrolloff = 8
+vim.opt.signcolumn = "yes"
+vim.opt.isfname:append("@-@")
 
-opt.list = true
-opt.listchars = { tab = '|·', trail = '·' }
-
-opt.completeopt = { 'menuone', 'noinsert', 'noselect' }
-
-local cmd = vim.cmd
-
-cmd('syntax on')
-cmd('filetype indent on')
-cmd('filetype plugin indent on')
+vim.opt.colorcolumn = "120"
