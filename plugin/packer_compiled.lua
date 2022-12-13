@@ -114,6 +114,16 @@ _G.packer_plugins = {
     path = "/home/yahn1ukov/.local/share/nvim/site/pack/packer/start/dracula.nvim",
     url = "https://github.com/Mofiqul/dracula.nvim"
   },
+  ["git.nvim"] = {
+    loaded = true,
+    path = "/home/yahn1ukov/.local/share/nvim/site/pack/packer/start/git.nvim",
+    url = "https://github.com/dinhhuy258/git.nvim"
+  },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/home/yahn1ukov/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/home/yahn1ukov/.local/share/nvim/site/pack/packer/start/lspkind-nvim",

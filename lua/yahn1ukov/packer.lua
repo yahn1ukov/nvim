@@ -51,10 +51,14 @@ packer.startup(function(use)
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-nvim-lua'
 
-    -- Additional for autocompletion
+    -- DLC for cmp
     use 'onsails/lspkind-nvim'
 
     -- Snippets
     use 'L3MON4D3/LuaSnip'
+
+    -- Git
+    use 'dinhhuy258/git.nvim'
+    use 'lewis6991/gitsigns.nvim'
 
 end)
