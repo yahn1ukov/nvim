@@ -41,7 +41,6 @@ local on_attach = function(client, bufnr)
     vim.keymap.set('n', '<C-d>', '<CMD>lua vim.lsp.buf.definition()<CR>', bufopts)
     vim.keymap.set('n', '<C-space>', '<CMD>lua vim.lsp.buf.declaration()<CR>', bufopts)
     vim.keymap.set('n', '<C-i>', '<CMD>lua vim.lsp.buf.implementation()<CR>', bufopts)
-    -- vim.keymap.set('n', '<C-s>', '<CMD>lua vim.lsp.buf.signature_help()<CR>', bufopts) ???
     vim.keymap.set('n', '<C-a>', '<CMD>lua vim.lsp.buf.code_action()<CR>', bufopts)
     vim.keymap.set('n', '<C-f>', '<CMD>lua vim.lsp.buf.formatting()<CR>', bufopts)
     vim.keymap.set('n', '<C-l>', '<CMD>lua vim.lsp.buf.references()<CR>', bufopts)

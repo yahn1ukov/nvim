@@ -32,23 +32,23 @@ cmp.setup({
         ['<Esc>'] = cmp.mapping.close(),
         ['<CR>'] = cmp.mapping.confirm({ select = true }),
     }),
-    sources = cmp.config.sources({
+    sources = {
         { name = 'nvim_lsp' },
-        { name = 'ultisnips' },
         { name = 'buffer' },
         { name = 'path' },
-        { name = 'nvim_lua' }
-    }),
+        { name = 'nvim_lua' },
+    },
     experimental = { ghost_text = true },
     formatting = {
         format = lspkind.cmp_format({
             mode = 'symbol_text',
+            maxwidth = 50,
+            ellipsis_char = '...',
             menu = ({
                 nvim_lsp = '[LSP]',
-                ultisnips = '[US]',
-                nvim_lua = '[LUA]',
+                nvim_lua = '[Lua]',
                 path = '[Path]',
-                buffer = '[Buffer]'
+                buffer = '[Buffer]',
             })
         })
     }
