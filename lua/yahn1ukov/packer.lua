@@ -23,6 +23,7 @@ packer.startup(function(use)
     -- Utilities
     use '907th/vim-auto-save'
     use 'jiangmiao/auto-pairs'
+    use 'terrortylor/nvim-comment'
 
     -- Tabline
     use 'romgrk/barbar.nvim'
