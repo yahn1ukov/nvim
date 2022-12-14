@@ -23,3 +23,4 @@ treesitter.setup {
     },
     auto_pairs = { enable = true }
 }
+

@@ -8,7 +8,7 @@ telescope.setup {
                 height = 0.7,
                 prompt_position = "top",
                 width = 0.6
-              }
+            }
         },
         preview = false,
         prompt_prefix = "  ",
@@ -17,3 +17,4 @@ telescope.setup {
     },
     extensions = { file_browser = { hijack_netrw = true } }
 }
+
