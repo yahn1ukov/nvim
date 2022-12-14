@@ -12,7 +12,9 @@ vim.keymap.set("n", "<Tab>", "<CMD>BufferNext<CR>", opts)
 vim.keymap.set("n", "<S-Tab>", "<CMD>BufferPrevious<CR>", opts)
 vim.keymap.set("n", "<S-q>", "<CMD>BufferClose<CR>", opts)
 
-vim.keymap.set("n", "<S-n>", ":NvimTreeToggle<CR>", opts)
+vim.keymap.set("n", "<S-n>", "<CMD>NvimTreeToggle<CR>", opts)
 
 vim.keymap.set("n", "<S-f>", "<CMD>Telescope find_files<CR>", opts)
+
+vim.keymap.set("n", "<S-t>", "<CMD>ToggleTerm<CR>", opts)
 

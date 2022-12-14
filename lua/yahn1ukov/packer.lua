@@ -24,6 +24,7 @@ packer.startup(function(use)
     use '907th/vim-auto-save'
     use 'jiangmiao/auto-pairs'
     use 'terrortylor/nvim-comment'
+    use 'akinsho/toggleterm.nvim'
 
     -- Tabline
     use 'romgrk/barbar.nvim'
