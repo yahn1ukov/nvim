@@ -11,7 +11,7 @@
 ## Requirements
 
 - [Neovim](https://github.com/neovim/neovim)
-- [Hack Nerd Font](https://www.nerdfonts.com/font-downloads) (default font for your terminal)
+- [JetBrains Nerd Font](https://www.nerdfonts.com/font-downloads) (default font for your terminal)
 - [fd](https://github.com/sharkdp/fd)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [Packer](https://github.com/wbthomason/packer.nvim)
