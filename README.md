@@ -118,14 +118,14 @@
 
 ## Screenshots
 
-![pic1](./screenshots/pic1.png)
+![pic1](./screenshots/picture1.png)
 
-![pic2](./screenshots/pic2.png)
+![pic2](./screenshots/picture2.png)
 
-![pic3](./screenshots/pic3.png)
+![pic3](./screenshots/picture3.png)
 
-![pic4](./screenshots/pic4.png)
+![pic4](./screenshots/picture4.png)
 
-![pic5](./screenshots/pic5.png)
+![pic5](./screenshots/picture5.png)
 
-![pic6](./screenshots/pic6.png)
+![pic6](./screenshots/picture6.png)
