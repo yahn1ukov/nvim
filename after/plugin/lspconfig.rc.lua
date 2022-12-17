@@ -44,12 +44,12 @@ lspconfig["sumneko_lua"].setup {
     },
 }
 
-local servers = { "pyright", "clangd", "rust_analyzer", "gopls", "csharp_ls", "tsserver", "bashls" }
+-- local servers = { }
 
-for _, server in pairs(servers) do
-    lspconfig[server].setup {
-        on_attach = on_attach,
-        capabilities = capabilities,
-        flags = flags
-    }
-end
+-- for _, server in pairs(servers) do
+--     lspconfig[server].setup {
+--         on_attach = on_attach,
+--         capabilities = capabilities,
+--         flags = flags
+--     }
+-- end

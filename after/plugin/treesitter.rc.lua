@@ -4,19 +4,10 @@ if (not status) then return end
 treesitter.setup {
     ensure_installed = {
         "lua",
-        "c",
-        "cpp",
-        "python",
-        "go",
-        "rust",
         "help",
-        "c_sharp",
-        "javascript",
-        "typescript",
-        "bash",
     },
     sync_install = false,
-    auto_install = true,
+    auto_install = false,
     highlight = {
         enable = true,
         additional_vim_regex_highlighting = false,

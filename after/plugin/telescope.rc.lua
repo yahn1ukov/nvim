@@ -10,7 +10,7 @@ telescope.setup {
         },
         prompt_prefix = "   ",
         selection_caret = "  ",
-        file_ignore_patterns = { 'node_modules', '.git', 'dist', 'obj', 'bin' }
+        file_ignore_patterns = { '.git', }
     },
     extensions = { file_browser = { hijack_netrw = true } }
 }
