@@ -72,61 +72,66 @@
 
 |Mode|Keymap|Action|
 |-|-|-|
-||**Navigation**||
+|**Navigation**|||
 |normal|Shift+h|navigate to left|
 |normal|Shift+j|navigate to down|
 |normal|Shift+k|navigate to up|
 |normal|Shift+l|navigate to right|
-||**Window**||
+|**Window**|||
 |normal|Shift+v|split horizontally|
 |normal|Shift+s|split vertically|
-||**Buffer**||
+|**Buffer**|||
 |normal|Tab|next buffer|
 |normal|Shift+Tab|previous buffer|
 |normal|Shift+q|close buffer|
-||**Sidebar**||
+|**Sidebar**|||
 |normal|Shift+n|toggle sidebar|
-||**Finder**||
+|**Finder**|||
 |normal|Shift+f|find files|
-||**Terminal**||
+|**Terminal**|||
 |normal|Shift+t|open terminal|
-||**Comments**||
+|**Comments**|||
 |normal|c|comment line|
 |normal|cc|comment block|
-||**Autocompletion**||
+|**Autocompletion**|||
 |insert|Tab|next suggestion|
 |insert|Shift+Tab|previous suggestion|
 |insert|Esc|close autocompletion|
 |insert|Enter|confirm suggestion|
-||**Git**||
+|**Git**|||
 |normal|gb|open blame window|
 |normal|gq|close blame window|
 |normal|Enter|open blame commit|
 |normal|gd|open diff window|
 |normal|gq|close diff window|
-||**LSP**||
+|**LSP**|||
+|normal|Ctrl+d|definition|
+|normal|Ctrl+f|code formatting|
+|**LSPSaga**|||
 |normal|Ctrl+e|show errors|
 |normal|Ctrl+n|next error|
 |normal|Ctrl+p|previous error|
 |normal|Ctrl+h|hover documentation|
 |normal|Ctrl+r|rename|
-|normal|Ctrl+d|definition|
-|normal|Ctrl+Space|declaration|
-|normal|Ctrl+i|impletitation|
+|normal|Ctrl+Space|declaration impletitation reference|
 |normal|Ctrl+a|code action|
-|normal|Ctrl+f|code formatting|
-|normal|Ctrl+l|window reference|
 
 ## Screenshots
 
-![pic1](./screenshots/picture1.png)
+![pic1](./screenshots/pic1.png)
 
-![pic2](./screenshots/picture2.png)
+![pic2](./screenshots/pic2.png)
 
-![pic3](./screenshots/picture3.png)
+![pic3](./screenshots/pic3.png)
 
-![pic4](./screenshots/picture4.png)
+![pic4](./screenshots/pic4.png)
 
-![pic5](./screenshots/picture5.png)
+![pic5](./screenshots/pic5.png)
 
-![pic6](./screenshots/picture6.png)
+![pic6](./screenshots/pic6.png)
+
+![pic7](./screenshots/pic7.png)
+
+![pic8](./screenshots/pic8.png)
+
+![pic9](./screenshots/pic9.png)
