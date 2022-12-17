@@ -15,15 +15,7 @@
 - [fd](https://github.com/sharkdp/fd)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [Packer](https://github.com/wbthomason/packer.nvim)
-- Install next on your machine:
-  - [Python](https://www.python.org/)
-  - [.NET](https://dotnet.microsoft.com/en-us/download)
-  - [Golang](https://go.dev/)
-  - [Rust](https://www.rust-lang.org/)
-  - [C/C++](https://clangd.llvm.org/installation.html)
 - Install next npm packages:
-  - [typescript-language-server](https://www.npmjs.com/package/typescript-language-server)
-  - [bash-language-server](https://www.npmjs.com/package/bash-language-server)
   - [neovim](https://www.npmjs.com/package/neovim)
 
 ## Languages
@@ -31,13 +23,6 @@
 |Name|LSP|
 |-|-|
 |Lua|sumneko_lua|
-|C/C++|clangd|
-|Python|pyright|
-|C#|csharp_ls|
-|Golang|gopls|
-|Rust|rust_analyzer|
-|JS/TS|tsserver|
-|Bash|bashls|
 
 ## Plugins
 
