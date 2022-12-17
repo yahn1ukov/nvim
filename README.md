@@ -66,6 +66,7 @@
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [dinhhuy258/git.nvim](https://github.com/dinhhuy258/git.nvim)
 - [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- [glepnir/lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim)
 
 ## Keymaps
 
