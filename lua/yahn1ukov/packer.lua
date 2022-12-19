@@ -33,10 +33,7 @@ packer.startup(function(use)
     use 'kyazdani42/nvim-tree.lua'
 
     -- Finder
-    use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.0',
-        requires = { { 'nvim-lua/plenary.nvim' } }
-    }
+    use { 'nvim-telescope/telescope.nvim', tag = '0.1.0', requires = { { 'nvim-lua/plenary.nvim' } } }
 
     -- Syntax highlighting
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
@@ -59,6 +56,9 @@ packer.startup(function(use)
 
     -- Snippets
     use 'L3MON4D3/LuaSnip'
+
+    -- Flutter & Dart
+    use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
 
     -- Git
     use 'dinhhuy258/git.nvim'

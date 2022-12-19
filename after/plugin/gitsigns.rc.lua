@@ -7,4 +7,3 @@ gitsigns.setup {
         delay = 100
     }
 }
-

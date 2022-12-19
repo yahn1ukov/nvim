@@ -5,6 +5,8 @@ treesitter.setup {
     ensure_installed = {
         "lua",
         "help",
+        "vim",
+        "dart",
     },
     sync_install = false,
     auto_install = false,
