@@ -24,7 +24,9 @@ packer.startup(function(use)
     use '907th/vim-auto-save'
     use 'jiangmiao/auto-pairs'
     use 'terrortylor/nvim-comment'
+    use 'folke/todo-comments.nvim'
     use 'akinsho/toggleterm.nvim'
+    use 'norcalli/nvim-colorizer.lua'
 
     -- Tabline
     use 'romgrk/barbar.nvim'
@@ -51,7 +53,7 @@ packer.startup(function(use)
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-nvim-lua'
 
-    -- DLC for cmp
+    -- DLC for Autocompletion
     use 'onsails/lspkind-nvim'
 
     -- Snippets

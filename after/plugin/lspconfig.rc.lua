@@ -48,12 +48,12 @@ lspconfig["sumneko_lua"].setup {
 -- The two can co-exist but please ensure you do NOT configure dartls using lspconfig. 
 -- It will be automatically set up by this plugin instead.
 
--- local servers = { "name_of_LSP_server", ... }
+local servers = { "tsserver", "csharp_ls" }
 
--- for _, server in pairs(servers) do
---     lspconfig[server].setup {
---         on_attach = on_attach,
---         capabilities = capabilities,
---         flags = flags
---     }
--- end
+for _, server in pairs(servers) do
+    lspconfig[server].setup {
+        on_attach = on_attach,
+        capabilities = capabilities,
+        flags = flags
+    }
+end
