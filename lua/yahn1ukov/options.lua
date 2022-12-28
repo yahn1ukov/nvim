@@ -1,5 +1,3 @@
-vim.opt.guicursor = ""
-
 vim.opt.background = "dark"
 vim.opt.title = true
 vim.opt.mouse = "a"

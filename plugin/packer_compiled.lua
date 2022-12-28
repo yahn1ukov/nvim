@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["auto-pairs"] = {
-    loaded = true,
-    path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\auto-pairs",
-    url = "https://github.com/jiangmiao/auto-pairs"
-  },
   ["barbar.nvim"] = {
     loaded = true,
     path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\barbar.nvim",
@@ -208,16 +203,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\todo-comments.nvim",
     url = "https://github.com/folke/todo-comments.nvim"
-  },
-  ["toggleterm.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\toggleterm.nvim",
-    url = "https://github.com/akinsho/toggleterm.nvim"
-  },
-  ["vim-auto-save"] = {
-    loaded = true,
-    path = "C:\\Users\\andri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-auto-save",
-    url = "https://github.com/907th/vim-auto-save"
   }
 }
 

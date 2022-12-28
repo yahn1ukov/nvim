@@ -21,11 +21,8 @@ packer.startup(function(use)
     use 'kyazdani42/nvim-web-devicons'
 
     -- Utilities
-    use '907th/vim-auto-save'
-    use 'jiangmiao/auto-pairs'
     use 'terrortylor/nvim-comment'
     use 'folke/todo-comments.nvim'
-    use 'akinsho/toggleterm.nvim'
     use 'norcalli/nvim-colorizer.lua'
 
     -- Tabline
