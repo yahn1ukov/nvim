@@ -1,7 +1,7 @@
 local status, lspconfig = pcall(require, 'lspconfig')
 if (not status) then return end
 
-local signs = { Error = "", Warn = "", Hint = "", Info = "" }
+local signs = { Error = "", Warn = "", Hint = "", Info = "" }
 
 for type, icon in pairs(signs) do
     local hl = "DiagnosticSign" .. type
@@ -24,7 +24,7 @@ local on_attach = function(client, bufnr)
     local bufopts = { noremap = true, silent = true, buffer = bufnr }
 
     vim.keymap.set('n', '<C-d>', '<CMD>lua vim.lsp.buf.definition()<CR>', bufopts)
-    vim.keymap.set('n', '<C-f>', '<CMD>lua vim.lsp.buf.formatting()<CR>', bufopts)
+    vim.keymap.set('n', '<C-f>', '<CMD>lua vim.lsp.buf.format()<CR>', bufopts)
 end
 
 local flags = { debounce_text_changes = 120 }
@@ -48,12 +48,12 @@ lspconfig["sumneko_lua"].setup {
 -- The two can co-exist but please ensure you do NOT configure dartls using lspconfig. 
 -- It will be automatically set up by this plugin instead.
 
--- local servers = {  }
+local servers = { "tsserver", "cssls", "html", "tailwindcss" }
 
--- for _, server in pairs(servers) do
---     lspconfig[server].setup {
---         on_attach = on_attach,
---         capabilities = capabilities,
---         flags = flags
---     }
--- end
+for _, server in pairs(servers) do
+    lspconfig[server].setup {
+        on_attach = on_attach,
+        capabilities = capabilities,
+        flags = flags
+    }
+end

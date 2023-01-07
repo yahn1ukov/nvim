@@ -10,9 +10,9 @@ tree.setup {
     diagnostics = {
         enable = true,
         icons = {
-            error = "",
-            warning = "",
-            info = "",
+            error = "",
+            warning = "",
+            info = "",
             hint = ""
         }
     }

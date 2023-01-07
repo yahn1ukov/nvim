@@ -2,7 +2,7 @@ local status, lspsaga = pcall(require, 'lspsaga')
 if (not status) then return end
 
 lspsaga.init_lsp_saga({
-    code_action_icon = "",
+    code_action_icon = "",
 })
 
 local opts = { noremap = true, silent = true }
