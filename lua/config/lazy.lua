@@ -14,12 +14,4 @@ vim.opt.rtp:prepend(lazypath)
 local ok, lazy = pcall(require, "lazy");
 if not ok then return end
 
-lazy.setup({
-    spec = {
-        { import = "plugins" },
-    },
-    default = {
-        lazy = false,
-        version = false,
-    },
-})
+lazy.setup("plugins")
