@@ -12,7 +12,7 @@ vim.opt.swapfile = false
 vim.opt.mouse = "a"
 vim.opt.smartcase = true
 vim.opt.ignorecase = true
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 8
 vim.opt.colorcolumn = "120"
 vim.opt.completeopt = "menu,menuone,noselect"
 vim.opt.clipboard:append({ "unnamed", "unnamedplus" })
