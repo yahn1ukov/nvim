@@ -4,7 +4,7 @@ return {
         local ok, tokyonight = pcall(require, "tokyonight")
         if not ok then return end
 
-        tokyonight.setup({ style = "moon" })
+        tokyonight.setup()
 
         vim.cmd.colorscheme("tokyonight")
     end,

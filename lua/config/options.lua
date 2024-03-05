@@ -1,26 +1,18 @@
 vim.g.mapleader = " "
-
-local opts = {
-    number = true,
-    autoindent = true,
-    smartindent = true,
-    expandtab = true,
-    tabstop = 4,
-    shiftwidth = 4,
-    softtabstop = 4,
-    wrap = false,
-    backup = false,
-    swapfile = false,
-    mouse = "a",
-    smartcase = true,
-    ignorecase = true,
-    scrolloff = 10,
-    colorcolumn = "120",
-    completeopt = "menu,menuone,noselect",
-}
-
-for opt, val in pairs(opts) do
-    vim.o[opt] = val
-end
-
+vim.opt.number = true
+vim.opt.autoindent = true
+vim.opt.smartindent = true
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+vim.opt.wrap = false
+vim.opt.backup = false
+vim.opt.swapfile = false
+vim.opt.mouse = "a"
+vim.opt.smartcase = true
+vim.opt.ignorecase = true
+vim.opt.scrolloff = 10
+vim.opt.colorcolumn = "120"
+vim.opt.completeopt = "menu,menuone,noselect"
 vim.opt.clipboard:append({ "unnamed", "unnamedplus" })
