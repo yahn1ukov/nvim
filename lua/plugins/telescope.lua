@@ -12,11 +12,10 @@ return {
 
     telescope.setup({
       defaults = {
+        initial_mode = "normal",
+        border = false,
         sorting_strategy = "ascending",
         layout_config = { horizontal = { prompt_position = "top" } },
-        prompt_prefix = "   ",
-        selection_caret = " ",
-        initial_mode = "normal",
         preview = false,
       },
       extensions = {
