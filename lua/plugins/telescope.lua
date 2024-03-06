@@ -8,7 +8,7 @@ return {
         local ok, telescope = pcall(require, "telescope")
         if not ok then return end
 
-        local fb_actions = telescope.extensions.file_browser.actions
+        local actions = telescope.extensions.file_browser.actions
 
         telescope.setup({
             defaults = {
@@ -16,6 +16,8 @@ return {
                 layout_config = { horizontal = { prompt_position = "top" } },
                 prompt_prefix = "   ",
                 selection_caret = " ",
+                initial_mode = "normal",
+                preview = false,
             },
             extensions = {
                 file_browser = {
@@ -23,14 +25,15 @@ return {
                         file_browser = true,
                         folder_browser = true,
                     },
+                    display_stat = { date = true },
                     hijack_netrw = true,
                     mappings = {
                         ["n"] = {
-                            ["a"] = fb_actions.create,
-                            ["r"] = fb_actions.rename,
-                            ["d"] = fb_actions.remove,
-                            ["m"] = fb_actions.move,
-                            ["c"] = fb_actions.copy,
+                            ["a"] = actions.create,
+                            ["r"] = actions.rename,
+                            ["d"] = actions.remove,
+                            ["m"] = actions.move,
+                            ["c"] = actions.copy,
                         },
                     },
                 },
