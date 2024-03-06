@@ -1,11 +1,11 @@
 return {
-    "folke/tokyonight.nvim",
-    config = function()
-        local ok, tokyonight = pcall(require, "tokyonight")
-        if not ok then return end
+  "folke/tokyonight.nvim",
+  config = function()
+    local ok, tokyonight = pcall(require, "tokyonight")
+    if not ok then return end
 
-        tokyonight.setup()
+    tokyonight.setup()
 
-        vim.cmd.colorscheme("tokyonight")
-    end,
+    vim.cmd.colorscheme("tokyonight")
+  end,
 }
