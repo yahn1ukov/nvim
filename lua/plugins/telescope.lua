@@ -1,44 +1,20 @@
 return {
   "nvim-telescope/telescope.nvim",
-  dependencies = {
-    "nvim-lua/plenary.nvim",
-    "nvim-telescope/telescope-file-browser.nvim",
+  cmd = "Telescope",
+  dependencies = { "nvim-lua/plenary.nvim" },
+  keys = {
+    { "<S-f>", "<CMD>Telescope find_files<CR>" },
+    { "<S-g>", "<CMD>Telescope live_grep<CR>" },
+    { "<S-b>", "<CMD>Telescope buffers<CR>" },
+    { "<S-e>", "<CMD>Telescope diagnostics<CR>" },
   },
-  config = function()
-    local ok, telescope = pcall(require, "telescope")
-    if not ok then return end
-
-    local actions = telescope.extensions.file_browser.actions
-
-    telescope.setup({
-      defaults = {
-        initial_mode = "normal",
-        border = false,
-        sorting_strategy = "ascending",
-        layout_config = { horizontal = { prompt_position = "top" } },
-        preview = false,
-      },
-      extensions = {
-        file_browser = {
-          hidden = {
-            file_browser = true,
-            folder_browser = true,
-          },
-          display_stat = { date = true },
-          hijack_netrw = true,
-          mappings = {
-            ["n"] = {
-              ["a"] = actions.create,
-              ["r"] = actions.rename,
-              ["d"] = actions.remove,
-              ["m"] = actions.move,
-              ["c"] = actions.copy,
-            },
-          },
-        },
-      },
-    })
-
-    telescope.load_extension("file_browser")
-  end,
+  opts = {
+    defaults = {
+      initial_mode = "normal",
+      border = false,
+      sorting_strategy = "ascending",
+      layout_config = { horizontal = { prompt_position = "top" } },
+      preview = false,
+    },
+  },
 }
