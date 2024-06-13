@@ -20,14 +20,7 @@ lazy.setup({
   change_detection = {
     notify = false,
   },
-  defaults = {
-    lazy = false,
-    version = false,
-  },
   performance = {
-    cache = {
-      enabled = true,
-    },
     rtp = {
       disabled_plugins = {
         "gzip",

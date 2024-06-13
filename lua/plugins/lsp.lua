@@ -1,6 +1,6 @@
 return {
   "neovim/nvim-lspconfig",
-  event = "BufReadPre",
+  event = "BufReadPost",
   dependencies = {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
@@ -14,7 +14,7 @@ return {
 
     local on_attach = function(_, buffer)
       local opts = { noremap = true, silent = true, buffer = buffer }
-      vim.keymap.set("n", "<C-f>", function() vim.lsp.buf.format({ async = true }) end, opts)
+      vim.keymap.set("n", "<C-f>", function() vim.lsp.buf.format({ async = true, lsp_fallback = true }) end, opts)
       vim.keymap.set("n", "<C-h>", vim.lsp.buf.hover, opts)
       vim.keymap.set("n", "<C-a>", vim.lsp.buf.code_action, opts)
       vim.keymap.set("n", "<C-r>", vim.lsp.buf.rename, opts)
@@ -23,47 +23,42 @@ return {
       vim.keymap.set("n", "<C-d>", vim.lsp.buf.definition, opts)
     end
 
-    local capabilities = vim.tbl_deep_extend(
-      "force",
-      {},
-      vim.lsp.protocol.make_client_capabilities(),
-      cmp_lsp.default_capabilities())
+    local capabilities = vim.lsp.protocol.make_client_capabilities()
+    capabilities = vim.tbl_deep_extend("force", capabilities, cmp_lsp.default_capabilities())
+
+    local servers = {
+      gopls = {},
+      tsserver = {},
+      volar = {},
+      lua_ls = {
+        settings = {
+          Lua = {
+            workspace = {
+              checkThirdParty = false,
+            },
+            completion = {
+              callSnippet = "Replace",
+            },
+            diagnostics = {
+              globals = { "vim" },
+            },
+          },
+        },
+      },
+    }
+
+    local ensure_installed = vim.tbl_keys(servers or {})
 
     mason.setup()
 
     mason_lspconfig.setup({
-      ensure_installed = {
-        "gopls",
-        "tsserver",
-        "lua_ls",
-        "volar",
-        "dockerls",
-      },
+      ensure_installed = ensure_installed,
       handlers = {
-        function(server)
-          lspconfig[server].setup({
-            on_attach = on_attach,
-            capabilities = capabilities,
-          })
-        end,
-        ["lua_ls"] = function()
-          lspconfig.lua_ls.setup({
-            on_attach = on_attach,
-            capabilities = capabilities,
-            settings = {
-              Lua = {
-                workspace = {
-                  checkThirdParty = false,
-                },
-                completion = {
-                  callSnippet = "Replace",
-                },
-                diagnostics = {
-                  globals = { "vim" },
-                },
-              },
-            },
-          })
+        function(name)
+          local server = servers[name] or {}
+          server.on_attach = on_attach
+          server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
+          lspconfig[name].setup(server)
         end,
       },
     })

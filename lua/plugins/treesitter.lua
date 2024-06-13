@@ -1,7 +1,7 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
-  event = "BufReadPost",
+  event = "BufEnter",
   config = function()
     local treesitter = require("nvim-treesitter")
 
@@ -29,6 +29,12 @@ return {
       sync_install = false,
       auto_install = false,
       highlight = {
+        enable = true,
+      },
+      autopairs = {
+        enable = true,
+      },
+      autotag = {
         enable = true,
       },
     })
